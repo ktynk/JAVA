@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class ZZZ {
+    public static void main(String args[]) {
+
+         int nums[];
+        nums = new int[3];
+        Scanner in = new Scanner(System.in);
+        System.out.println("введите 1-е значение");
+        int a = in.nextInt();
+        System.out.println("введите 2-е значение");
+        int b = in.nextInt();
+        System.out.println("введите 3-е значение");
+        int c = in.nextInt();
+        nums[0] = a;
+        nums[1] = b;
+        nums[2] = c;
+        int max = nums[0]; int min = nums[0];
+        for(int i = 0; i<3; i++)
+        {
+            if(nums[i]<min)
+            {
+                min = nums[i];
+            }
+            if(nums[i]>max)
+            {
+                max = nums[i];
+            }
+        }
+        double z;
+        z = (max + min)/2.0;
+        System.out.println("CРЕДНЕЕ ЗНАЧЕНИЕ НАИБОЛЬШЕГО И НАИМЕНЬШЕГО ЧИСЛА:" +z);
+    }
+}
